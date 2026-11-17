@@ -11,3 +11,6 @@ echo "Remote     : $(git remote get-url origin 2>/dev/null)"
 echo "Last Commit: $(git log --oneline -1)"
 echo "Status     :"
 git status --short
+echo
+echo "---- Commit History ----"
+git log --oneline --graph --decorate --all -10
