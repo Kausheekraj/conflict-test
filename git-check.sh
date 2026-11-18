@@ -14,3 +14,5 @@ git status --short
 echo
 echo "---- Staged Changes ----"
 git diff --staged
+echo "---- Commit History ----"
+git log --oneline --graph --decorate --all -10
