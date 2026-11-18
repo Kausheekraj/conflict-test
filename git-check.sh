@@ -5,7 +5,7 @@ git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
     exit 1
 }
 
-echo "Repository : DEV B"
+-echo "Repository : $(basename "$(git rev-parse --show-toplevel)")"
 echo "Branch     : $(git branch --show-current)"
 echo "Remote     : $(git remote get-url origin 2>/dev/null)"
 echo "Last Commit: $(git log --oneline -1)"
