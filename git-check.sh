@@ -22,3 +22,5 @@ fi
 done
 echo "---- Commit History ----"
 git log --oneline --graph --decorate --all -10
+echo "---- Remote Branches ----"
+git branch -r 
