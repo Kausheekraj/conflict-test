@@ -13,6 +13,12 @@ echo "Status     :"
 git status --short
 echo
 echo "---- Staged Changes ----"
-git diff --staged
+
+if git diff --staged --quiet; then
+  echo "No changes in the staging index "
+else
+  git diff --staged --quiet
+fi
+done
 echo "---- Commit History ----"
 git log --oneline --graph --decorate --all -10
