@@ -19,6 +19,5 @@ if git diff --staged --quiet; then
 else
   git diff --staged --quiet
 fi
-done
 echo "---- Commit History ----"
 git log --oneline --graph --decorate --all -10
