@@ -13,7 +13,9 @@ echo "---- Recent  commits ----"
 git log --pretty=format:' • %h %s ' -3
 echo "-------------------------"
 
-git log -1 --pretty=format:"Latest commit:%h%nAuthor: %an <%ae>%nDate: %ad%n" --date=iso
+git log -1 \
+  --pretty=format:"Latest commit: %h%nAuthor: %an <%ae>%nDate: %ad IST%n" \
+  --date=format:'%Y-%m-%d %H:%M:%S'
 echo "Status     :"
 git status --short
 echo
