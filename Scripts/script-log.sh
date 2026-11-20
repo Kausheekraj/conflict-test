@@ -1,0 +1,1 @@
+figlet -smslant new script
