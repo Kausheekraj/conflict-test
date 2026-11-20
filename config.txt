@@ -1,0 +1,4 @@
+Application: Employee Portal
+Environment: Development
+Status: Active
+Port: 3300
