@@ -1,4 +1,10 @@
 Application: Employee Portal
 Environment: Development
+<<<<<<< HEAD
 Port: 9090
 Owner: Developer A
+=======
+Status: Active
+Port: 9000
+
+>>>>>>> b40c00910dda4b2f8963c93803a81973bce35d13
